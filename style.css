@@ -24,10 +24,14 @@ a {
     text-decoration: none;
     letter-spacing: 3px;
 }
-
+header {
+    background-image: url(/img/bg_header.jpg);
+    background-size: cover;
+} 
 .imghead{
-    position: fixed;
+    position: absolute;
     width: 100%;
+    height: auto;
     z-index: -1;
 }
 
@@ -35,7 +39,8 @@ a {
     display: flex;
     justify-content: center;
     padding: 60px;
-    margin-left:250px;
+    margin-top: 180px;
+    margin-left: 250px;
 }
 .parag {
     display: flex;
@@ -43,21 +48,22 @@ a {
     color: white;
     width: fit-content;
     align-items: flex-end;
+    text-align: right;
+    letter-spacing: 3px;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 
-h1 {
+.parag h1 {
     font-size: 4.5em;
     margin-bottom: 60px;
 }
 
-h1, p {
-    text-align: right;
-    letter-spacing: 3px;
-}
-p {
+.parag p {
     font-size: 1.2em;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    line-height: 40px;
 }
 
 .lookmore {
@@ -68,4 +74,92 @@ p {
     padding: 5px 10px;
     border: none;
     border-radius: 50px;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aboutgohall {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #272727;
+    margin: auto;
+    padding: 80px;
+}
+
+h2 { 
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+
+}
+
+.boxintro {
+    display: flex;
+    height: auto;
+    width:100%;
+
+}
+.intro {
+    width: 60%;
+}
+.txt1 p {
+    color: white;
+    font-size: 1.5em;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.lorem {
+    color: #c2c2c2;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+
+}
+
+.lorem1 p {
+    border-left: 4px solid burlywood;
+    color: burlywood;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-left: 50px;
+    margin-bottom: 20px;
+
+}
+.londonhall{
+    position: relative;
+    width: 40%;
+}
+.londonhall img{
+    display: flex;
+    width: auto;
+    height: 350px;  
+}
+.lond {
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    width: fit-content;
+    font-weight: bolder;
+    color: white;
+    background: burlywood;
+    padding: 5px 10px;
+    border: none;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+h2 {
+    color: white;
+    
+}
+h2 span {
+    color: burlywood;
+}
+.londonhall div {
+    width: fit-content;
+    position: relative;
 }
