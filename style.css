@@ -10,7 +10,6 @@ body {
 .nav {
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
     gap: 80px;
     justify-content: center;
 }
@@ -24,16 +23,16 @@ a {
     text-decoration: none;
     letter-spacing: 3px;
 }
+
+.thehallhover:hover{
+    background-image: url(/img/logo_hover.png); 
+}
+
 header {
     background-image: url(/img/bg_header.jpg);
     background-size: cover;
 } 
-.imghead{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-}
+
 
 .section1 {
     display: flex;
@@ -80,7 +79,7 @@ header {
 .aboutgohall {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     background-color: #272727;
     margin: auto;
     padding: 80px;
@@ -89,21 +88,26 @@ header {
 h2 { 
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 10px;
     margin-bottom: 60px;
-
+    color: white;
+    gap:20px;
+   
 }
 
+h2 span {
+    color: burlywood;
+}
 .boxintro {
     display: flex;
     height: auto;
-    width:100%;
-
 }
 .intro {
-    width: 60%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
 }
 .txt1 p {
     color: white;
@@ -131,35 +135,135 @@ h2 {
 }
 .londonhall{
     position: relative;
-    width: 40%;
+    width: 25%;
 }
-.londonhall img{
-    display: flex;
-    width: auto;
-    height: 350px;  
+.londonhall img {
+    height: auto;
 }
 .lond {
     position: absolute;
-    bottom: -15px;
-    left: 15px;
+    bottom: 15px;
+    left: 20px;
     width: fit-content;
     font-weight: bolder;
     color: white;
     background: burlywood;
     padding: 5px 10px;
-    border: none;
     font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 20px;
+
 }
 
-h2 {
-    color: white;
-    
-}
-h2 span {
-    color: burlywood;
-}
 .londonhall div {
-    width: fit-content;
     position: relative;
+}
+
+.aboutprojects {
+    background-color: burlywood;
+    width: 50%;
+    margin: auto;
+    padding: 80px;
+}
+.hall {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: flex-end;
+    gap: 50px;
+    position: relative;
+
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+    color: white;
+    gap: 20px;
+}
+
+h3 span {
+    color: #272727;
+}
+.paris {
+    display: flex;
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    margin: 30px;
+    color: white;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.parisbot {
+    display: flex;
+    position: absolute;
+    height: fit-content;
+    bottom: 0;
+    margin: 30px;
+    color: white;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    background-color: #272727;
+    padding: 2px 5px;
+}
+.london {
+    display: flex;
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    margin: 30px;
+    color: white;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.londonbot {
+    display: flex;
+    position: absolute;
+    height: fit-content;
+    bottom: 0;
+    margin: 30px;
+    color: white;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    background-color: #272727;
+    width: 20%;
+    padding: 2px 5px;
+}
+
+
+
+
+
+
+
+
+
+.aboutservices {
+    background-color: #272727;
+    width: 50%;
+    margin: auto;
+    padding: 80px;
+    height: 500px;
+}
+
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+    color: white;
+    gap: 20px;
+}
+
+h4 span {
+    color: burlywood;
 }
