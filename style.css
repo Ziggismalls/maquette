@@ -1,9 +1,7 @@
 * {
     margin: 0;
 }
-html {
-    height: 100%;
-}
+
 body {
     background-color: #606060;
 }
@@ -13,7 +11,7 @@ body {
     gap: 80px;
     justify-content: center;
 }
-a:hover {
+a:not(.logotop):not(.more):hover{
     color: burlywood;
     border-bottom: 2px burlywood solid;
     padding-bottom: 20px;
@@ -24,15 +22,15 @@ a {
     letter-spacing: 3px;
 }
 
-.thehallhover:hover{
-    background-image: url(/img/logo_hover.png); 
+
+.logotop:hover{
+    content: url(/img/logo_hover.png); 
 }
 
 header {
     background-image: url(/img/bg_header.jpg);
     background-size: cover;
 } 
-
 
 .section1 {
     display: flex;
@@ -100,16 +98,19 @@ h2 {
 h2 span {
     color: burlywood;
 }
+
 .boxintro {
     display: flex;
     height: auto;
+    justify-content: center;
 }
 .intro {
-    width: 75%;
+    width: 65%;
     display: flex;
     flex-direction: column;
 }
 .txt1 p {
+    margin-left: 50px;
     color: white;
     font-size: 1.5em;
     width: fit-content;
@@ -135,16 +136,12 @@ h2 span {
 }
 .londonhall{
     position: relative;
-    width: 25%;
 }
-.londonhall img {
-    height: auto;
-}
+
 .lond {
     position: absolute;
     bottom: 15px;
     left: 20px;
-    width: fit-content;
     font-weight: bolder;
     color: white;
     background: burlywood;
@@ -152,11 +149,6 @@ h2 span {
     font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
 
 }
-
-.londonhall div {
-    position: relative;
-}
-
 .aboutprojects {
     background-color: burlywood;
     width: 50%;
@@ -168,10 +160,16 @@ h2 span {
     flex-direction: row;
     width: 50%;
     justify-content: flex-end;
-    gap: 50px;
+    gap: 20px;
     position: relative;
 
 }
+.boxproject {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 h3 {
     display: flex;
     justify-content: center;
@@ -187,9 +185,8 @@ h3 span {
     color: #272727;
 }
 .paris {
-    display: flex;
+
     position: absolute;
-    height: fit-content;
     top: 0;
     margin: 30px;
     color: white;
@@ -198,9 +195,7 @@ h3 span {
     line-height: 1.5em;
 }
 .parisbot {
-    display: flex;
     position: absolute;
-    height: fit-content;
     bottom: 0;
     margin: 30px;
     color: white;
@@ -210,10 +205,11 @@ h3 span {
     background-color: #272727;
     padding: 2px 5px;
 }
+
+
+
 .london {
-    display: flex;
     position: absolute;
-    height: fit-content;
     top: 0;
     margin: 30px;
     color: white;
@@ -221,10 +217,9 @@ h3 span {
     font-weight: 600;
     line-height: 1.5em;
 }
+
 .londonbot {
-    display: flex;
     position: absolute;
-    height: fit-content;
     bottom: 0;
     margin: 30px;
     color: white;
@@ -232,16 +227,38 @@ h3 span {
     font-weight: 600;
     line-height: 1.5em;
     background-color: #272727;
-    width: 20%;
+    width: 25%;
     padding: 2px 5px;
 }
 
+.years{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 20px;
+}
 
+.years img {
+    margin-bottom: 25px;
+}
 
+.yearz {
+    margin-bottom: 35px;
+}
+.yearsone{
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: #272727;
+    font-size: 1.5em;
+}
 
-
-
-
+.yearstwo{
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.5em;
+}
 
 
 .aboutservices {
@@ -251,7 +268,6 @@ h3 span {
     padding: 80px;
     height: 500px;
 }
-
 
 h4 {
     display: flex;
@@ -266,4 +282,150 @@ h4 {
 
 h4 span {
     color: burlywood;
+}
+.boxservices {
+    display: flex;
+    justify-content: center;
+}
+.boxdev {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    margin-right: 20px;
+}
+.devparag {
+    color: rgba(255, 255, 255, 0.149);
+    line-height: 1.5em;
+    height: 100%;
+}
+h5 {
+    color: white;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.boxplans {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-right: 20px;
+}
+h6 {
+    color: white;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.more{
+    display: flex;
+    justify-content: right;
+    color: burlywood;
+    background-color: #606060;
+    padding: 10px;
+    width: 60%;
+    border-left: 2px solid burlywood ;
+}
+
+.more:hover{
+    background-color: burlywood;
+    color: #272727;
+    border-left: 2px solid #606060 ;
+}
+.boxmap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 35%;
+}
+.borderimg {
+    display: flex;
+    border-top: 2px solid burlywood;
+    width: 300px;
+    margin-bottom:  20px;
+}
+.borderimg1 {
+    display: flex;
+    border-top: 2px solid burlywood;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.txtmap {
+    color: rgba(255, 255, 255, 0.749);
+    text-align: right;
+    line-height: 1.5em;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/bg_footer.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 430px;
+}
+
+
+.imgrequest {
+    display: flex;
+    position: relative;
+    height: fit-content;
+
+}
+.request {
+    width: 40%;
+}
+.prequest {
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+}
+
+.formclass {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    opacity: .9;
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.466);
+
+}
+input, textarea {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    margin: 20px;
+}
+
+#submit{
+    color: white;
+    background: burlywood;
+    font-size: 1em;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.boitedev {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
