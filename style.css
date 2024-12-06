@@ -185,7 +185,6 @@ h3 span {
     color: #272727;
 }
 .paris {
-
     position: absolute;
     top: 0;
     margin: 30px;
@@ -206,8 +205,9 @@ h3 span {
     padding: 2px 5px;
 }
 
-
-
+.Londontxt {
+    color: burlywood;
+}
 .london {
     position: absolute;
     top: 0;
