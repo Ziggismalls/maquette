@@ -157,7 +157,6 @@ h2 span {
 }
 .hall {
     display: flex;
-    flex-direction: row;
     width: 50%;
     justify-content: flex-end;
     gap: 20px;
@@ -166,7 +165,6 @@ h2 span {
 }
 .boxproject {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -390,8 +388,6 @@ footer {
 }
 
 .formclass {
-    display: flex;
-    flex-direction: column;
     background-color: black;
     color: white;
     opacity: .9;
@@ -403,8 +399,15 @@ form{
 }
 ::placeholder {
     color: rgba(255, 255, 255, 0.466);
-
+    
 }
+
+.boitedev {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
 input, textarea {
     background-color: transparent;
     border-top: none;
@@ -423,9 +426,4 @@ input, textarea {
     border-radius: 5px;
     font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
-}
-.boitedev {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
 }
