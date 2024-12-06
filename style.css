@@ -28,6 +28,7 @@ a {
 }
 
 header {
+    position: relative;
     background-image: url(/img/bg_header.jpg);
     background-size: cover;
 } 
@@ -68,7 +69,7 @@ header {
     font-weight: bolder;
     color: white;
     background: burlywood;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 50px;
     font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
@@ -371,11 +372,12 @@ footer {
 .imgrequest {
     display: flex;
     position: relative;
-    height: fit-content;
+    width: 42%;
 
 }
 .request {
-    width: 40%;
+    display: flex;
+    width: 60%;
 }
 .prequest {
     position: absolute;
@@ -391,12 +393,13 @@ footer {
     background-color: black;
     color: white;
     opacity: .9;
-    width: 100%;
+    width: 60%;
 }
 form{
     display: flex;
     flex-direction: column;
 }
+
 ::placeholder {
     color: rgba(255, 255, 255, 0.466);
     
@@ -410,11 +413,10 @@ form{
 
 input, textarea {
     background-color: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    all: unset;
     color: white;
     margin: 20px;
+    border-bottom: 1px solid gray;
 }
 
 #submit{
@@ -426,4 +428,36 @@ input, textarea {
     border-radius: 5px;
     font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
+}
+
+i:hover {
+    color: burlywood;
+    border: 2px solid burlywood;
+}
+
+.svgbg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.fa-brands {
+    padding: 10px;
+    color: #606060;
+    border: 2px solid #606060;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.fa-pinterest-p {
+    padding: 10px 18px;
+}
+
+.fa-facebook-f {
+    padding: 10px 20px;
 }
